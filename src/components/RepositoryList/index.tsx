@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
 import { ApplicationState } from '../../store';
 import { Repository } from '../../store/ducks/repositories/types';
+import RepositoryItem from '../RepositoryItem';
 import * as RepositoriesActions from '../../store/ducks/repositories/actions';
 
 interface StateProps {
@@ -26,9 +27,9 @@ class RepositoryList extends Component<Props> {
     const { repositories } = this.props;
 
     return (
-      <div>
-        {repositories.map(r => <div key={r.id}>{r.name}</div>)}
-      </div>
+      <ul>
+        {repositories.map(r => <RepositoryItem key={r.id} repository={r} />)}
+      </ul>
     )
   }
 }

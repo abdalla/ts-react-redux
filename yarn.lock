@@ -987,6 +987,44 @@
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
+"@redux-saga/core@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@redux-saga/core/-/core-1.0.3.tgz#c29ec7ae3d7dfcbcb8dc93177f2b3edc798c5d85"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@redux-saga/deferred" "^1.0.1"
+    "@redux-saga/delay-p" "^1.0.1"
+    "@redux-saga/is" "^1.0.2"
+    "@redux-saga/symbols" "^1.0.1"
+    "@redux-saga/types" "^1.0.2"
+    redux ">=0.10 <5"
+    typescript-tuple "^2.1.0"
+
+"@redux-saga/deferred@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@redux-saga/deferred/-/deferred-1.0.1.tgz#c895445e486bded90acf0b873b4e978fbfe458c2"
+
+"@redux-saga/delay-p@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@redux-saga/delay-p/-/delay-p-1.0.1.tgz#d69fc6103c7509ae80faa144ea17bbc69e51e029"
+  dependencies:
+    "@redux-saga/symbols" "^1.0.1"
+
+"@redux-saga/is@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@redux-saga/is/-/is-1.0.2.tgz#7f4be014c97061898d7efb11d6c9de31e943ed38"
+  dependencies:
+    "@redux-saga/symbols" "^1.0.1"
+    "@redux-saga/types" "^1.0.2"
+
+"@redux-saga/symbols@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@redux-saga/symbols/-/symbols-1.0.1.tgz#46512ae1275f88df061c42168d0f600ddb170c1e"
+
+"@redux-saga/types@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@redux-saga/types/-/types-1.0.2.tgz#1d94f02800b094753f9271c206a26c2a06ca14ee"
+
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-4.2.0.tgz#dadcb6218503532d6884b210e7f3c502caaa44b1"
@@ -1186,6 +1224,12 @@
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
+
+"@types/redux-saga@0.10.5":
+  version "0.10.5"
+  resolved "https://registry.yarnpkg.com/@types/redux-saga/-/redux-saga-0.10.5.tgz#80bf21078379ebc97387dbe56e44467b5677fa85"
+  dependencies:
+    redux-saga "*"
 
 "@types/stack-utils@^1.0.1":
   version "1.0.1"
@@ -1683,6 +1727,13 @@ aws-sign2@~0.7.0:
 aws4@^1.8.0:
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.8.0.tgz#f0e003d9ca9e7f59c7a508945d7b2ef9a04a542f"
+
+axios@0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
+  dependencies:
+    follow-redirects "1.5.10"
+    is-buffer "^2.0.2"
 
 axobject-query@^2.0.2:
   version "2.0.2"
@@ -2755,6 +2806,12 @@ debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.8, debug@^2.6.
   dependencies:
     ms "2.0.0"
 
+debug@=3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/debug/-/debug-3.1.0.tgz#5bb5a0672628b64149566ba16819e61518c67261"
+  dependencies:
+    ms "2.0.0"
+
 debug@^3.2.5, debug@^3.2.6:
   version "3.2.6"
   resolved "https://registry.yarnpkg.com/debug/-/debug-3.2.6.tgz#e83d17de16d8a7efb7717edbe5fb10135eee629b"
@@ -3665,6 +3722,12 @@ flush-write-stream@^1.0.0:
     inherits "^2.0.3"
     readable-stream "^2.3.6"
 
+follow-redirects@1.5.10:
+  version "1.5.10"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
+  dependencies:
+    debug "=3.1.0"
+
 follow-redirects@^1.0.0:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.7.0.tgz#489ebc198dc0e7f64167bd23b03c4c19b5784c76"
@@ -4380,7 +4443,7 @@ is-buffer@^1.0.2, is-buffer@^1.1.5:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
 
-is-buffer@^2.0.0:
+is-buffer@^2.0.0, is-buffer@^2.0.2:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.3.tgz#4ecf3fcf749cbd1e472689e109ac66261a25e725"
 
@@ -7201,7 +7264,13 @@ recursive-readdir@2.2.2:
   dependencies:
     minimatch "3.0.4"
 
-redux@4.0.1, redux@^4.0.0:
+redux-saga@*, redux-saga@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/redux-saga/-/redux-saga-1.0.3.tgz#23e1c71fca6752ce52db3aaba4ecca657d7a9a1f"
+  dependencies:
+    "@redux-saga/core" "^1.0.3"
+
+redux@4.0.1, "redux@>=0.10 <5", redux@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/redux/-/redux-4.0.1.tgz#436cae6cc40fbe4727689d7c8fae44808f1bfef5"
   dependencies:
@@ -8274,6 +8343,22 @@ typedarray@^0.0.6:
 typesafe-actions@4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/typesafe-actions/-/typesafe-actions-4.4.2.tgz#8f817c479d12130b5ebb442032968b2a18929e1a"
+
+typescript-compare@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/typescript-compare/-/typescript-compare-0.0.2.tgz#7ee40a400a406c2ea0a7e551efd3309021d5f425"
+  dependencies:
+    typescript-logic "^0.0.0"
+
+typescript-logic@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/typescript-logic/-/typescript-logic-0.0.0.tgz#66ebd82a2548f2b444a43667bec120b496890196"
+
+typescript-tuple@^2.1.0:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/typescript-tuple/-/typescript-tuple-2.2.1.tgz#7d9813fb4b355f69ac55032e0363e8bb0f04dad2"
+  dependencies:
+    typescript-compare "^0.0.2"
 
 typescript@3.5.2:
   version "3.5.2"
